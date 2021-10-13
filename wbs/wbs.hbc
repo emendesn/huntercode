@@ -1,0 +1,7 @@
+description=WebSocket extension for hbhttpd
+
+libpaths=lib/${hb_plat}/${hb_comp}
+
+libs=${hb_name}
+
+lib=hbhttpd.hbc hbssl.hbc

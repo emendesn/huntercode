@@ -1,0 +1,75 @@
+@charset 'utf-8';
+
+body {
+    background-color: #909eab;
+    font-family: monospace; font-size: 20px;
+/*    line-height: 20px;
+    x-font-family: Helvetica, sans-serif; font-size: 18px; line-height: 24px; */
+}
+
+div.keretes{
+    width: 80ch;
+    height: 28.8em;
+/*    font-family: monospace; font-size: 18px;
+    margin: auto; */
+}
+
+.normal {
+}
+
+.cursor {
+    animation: 1s blink step-end infinite;
+}
+
+.sor {
+    position: relative;
+}
+
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
+.cursor.before {
+/*    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite; */
+    content: '-';
+    animation: 0.5s blink step-end infinite;
+    background-color: black;
+    position: absolute;
+    color: rgba(0,0,0,0.0);
+    top: 1em;
+    left: 0px;
+    height: 0.2em;
+    z-index: 100;
+}
+
+@-moz-keyframes blink {
+    from, to {
+        background-color: transparent;
+    }
+}
+
+/*@-webkit-keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
+@-o-keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+} */
